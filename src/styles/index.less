@@ -1,0 +1,228 @@
+@import "./reset.less";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    Segoe UI, Arial, Roboto, "PingFang SC", "miui", "Hiragino Sans GB",
+    "Microsoft Yahei", sans-serif;
+  background-color: #f7f9fc;
+  color:#333;
+  font-size: 16px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  // vertical-align: 20px;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+img{
+  display: inline-block;
+}
+
+.t {
+  &-color,
+  &-link {
+    color: #5085fb;
+  }
+
+  &-gray {
+    color: gray;
+  }
+
+  &-blue {
+    color: #5085fb;
+  }
+
+  &-red {
+    color: red;
+  }
+  &-orange {
+    color: orange;
+  }
+
+  &-600 {
+    font-weight: 600;
+  }
+
+  &-500 {
+    font-weight: 500;
+  }
+
+  &-1 {
+    line-height: 1;
+  }
+
+  &-1d5 {
+    line-height: 1.5;
+  }
+
+  &-2 {
+    line-height: 2;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-10 {
+    font-size: 10px;
+  }
+
+  &-12 {
+    font-size: 12px;
+  }
+
+  &-14 {
+    font-size: 14px;
+  }
+
+  &-16 {
+    font-size: 16px;
+  }
+
+  &-18 {
+    font-size: 18px;
+  }
+
+  &-20 {
+    font-size: 20px;
+  }
+}
+
+.p {
+  &b {
+    &-s {
+      padding-bottom: 20rpx;
+    }
+
+    &-m {
+      padding-bottom: 30rpx;
+    }
+
+    &-l {
+      padding-bottom: 40rpx;
+    }
+  }
+
+  &l {
+    &-s {
+      padding-left: 20rpx;
+    }
+
+    &-m {
+      padding-left: 30rpx;
+    }
+
+    &-l {
+      padding-left: 40rpx;
+    }
+  }
+
+  &r {
+    &-s {
+      padding-right: 20rpx;
+    }
+
+    &-m {
+      padding-right: 30rpx;
+    }
+
+    &-l {
+      padding-right: 40rpx;
+    }
+  }
+
+  &ull {
+    &-left {
+      float: left;
+    }
+
+    &-right {
+      float: right;
+    }
+  }
+}
+
+.m {
+  &t {
+    &-s {
+      margin-top: 20rpx;
+    }
+
+    &-m {
+      margin-top: 30rpx;
+    }
+
+    &-l {
+      margin-top: 40rpx;
+    }
+  }
+  &r {
+    &-s {
+      margin-right: 20rpx;
+    }
+
+    &-m {
+      margin-right: 30rpx;
+    }
+
+    &-l {
+      margin-right: 40rpx;
+    }
+  }
+  &b {
+    &-5 {
+      margin-bottom: 5px;
+    }
+
+    &-10 {
+      margin-bottom: 10px;
+    }
+
+    &-20 {
+      margin-bottom: 20px;
+    }
+  }
+  &l {
+    &-5 {
+      margin-left: 5px;
+    }
+
+    &-10 {
+      margin-left: 10px;
+    }
+
+    &-20 {
+      margin-left: 20px;
+    }
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
