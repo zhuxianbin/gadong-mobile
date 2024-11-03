@@ -2,19 +2,19 @@
   <div class="page page-login">
     <div class="page-pad">
       <div class="panel-login">
-        <div class="panel-title">您好，欢迎来到UU语音。</div>
+        <div class="panel-title">结算系统</div>
         <div class="panel-body">
           <form class="uu-form">
             <div class="uu-form-item">
-              <label>手机号</label>
+              <label>手机号码</label>
               <div class="uu-input">
-                <input v-model="prms.phone" />
+                <input v-model="prms.phone" placeholder="请输入手机号码" />
               </div>
             </div>
             <div class="uu-form-item" style="margin-top: 22px">
               <label>密码</label>
               <div class="uu-input">
-                <input v-model="prms.pass" type="text" onfocus="this.type = 'password'" />
+                <input v-model="prms.pass" type="text" onfocus="this.type = 'password'"  placeholder="请输入登录密码"  />
               </div>
             </div>
             <div style="margin: 32px 0 16px">
@@ -24,9 +24,9 @@
             </div>
             <div class="clearfix mt-[40px]">
               <!-- <div class="pull-left">忘记密码?</div> -->
-              <div class="pull-right">
+              <!-- <div class="pull-right">
                 <a href="/#/register">立即注册</a>
-              </div>
+              </div> -->
             </div>
           </form>
         </div>
@@ -74,10 +74,10 @@ async function doLogin() {
   width: 100vw;
   overflow: hidden;
   &.page-login {
-    background: url("/static/images/login-bg.jpg");
+    // background: url("/static/images/login-bg.jpg");
     background-size: 100%;
     background-position: top;
-    color: #fff;
+    // color: #fff;
     animation-name: bgzoom;
     animation-duration: 50s;
     animation-delay: 0;
@@ -91,7 +91,7 @@ async function doLogin() {
     padding: 30px;
   }
 
-  .panel-login {
+  .panel-login {  
     padding: 100px 0 0 0;
   }
 
@@ -114,7 +114,7 @@ async function doLogin() {
 
   .uu-input {
     position: relative;
-    background: rgba(215, 215, 215, 0.5);
+    // background: rgba(215, 215, 215, 0.5);
     height: 48px;
     border-radius: 8px;
 
@@ -128,6 +128,7 @@ async function doLogin() {
       padding: 0 16px;
       box-sizing: border-box;
       font-size: 18px;
+      border-bottom:1px solid #ccc;
     }
   }
 }

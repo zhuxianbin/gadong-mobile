@@ -4,7 +4,7 @@ import order from "./order";
 import { getToken } from "@/utils/auth";
 
 const pages: any = import.meta.glob("../views/**/*.vue");
-
+console.log(pages);
 const routes = Object.keys(pages).map((item: any) => {
   let str = item.match(/\/views(.*)\.vue$/)[1].toLowerCase();
   // console.log(str, "str");
@@ -22,18 +22,18 @@ const routes = Object.keys(pages).map((item: any) => {
     name: name.replace(/.index/g, ""),
   };
 });
-
+console.log(routes,pages,"routes",);
 export const router = createRouter({
   history: createWebHashHistory(),
   routes: unique([
     ...routes,
     ...order,
     ...cms,
-    {
-      path: "/",
-      name: "home",
-      redirect: "/center",
-    },
+    // {
+    //   path: "/",
+    //   name: "index",
+    //   component: pages['index'],
+    // },
   ]),
 });
 
