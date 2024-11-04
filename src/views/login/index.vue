@@ -14,13 +14,16 @@
             <div class="uu-form-item" style="margin-top: 22px">
               <label>密码</label>
               <div class="uu-input">
-                <input v-model="prms.pass" type="text" onfocus="this.type = 'password'"  placeholder="请输入登录密码"  />
+                <input
+                  v-model="prms.pass"
+                  type="text"
+                  onfocus="this.type = 'password'"
+                  placeholder="请输入登录密码"
+                />
               </div>
             </div>
             <div style="margin: 32px 0 16px">
-              <Button block round class="uu-btn-primary" type="primary" @click="doLogin">
-                登 录
-              </Button>
+              <Button block round type="primary" @click="doLogin"> 登 录 </Button>
             </div>
             <div class="clearfix mt-[40px]">
               <!-- <div class="pull-left">忘记密码?</div> -->
@@ -91,7 +94,7 @@ async function doLogin() {
     padding: 30px;
   }
 
-  .panel-login {  
+  .panel-login {
     padding: 100px 0 0 0;
   }
 
@@ -128,7 +131,7 @@ async function doLogin() {
       padding: 0 16px;
       box-sizing: border-box;
       font-size: 18px;
-      border-bottom:1px solid #ccc;
+      border-bottom: 1px solid #ccc;
     }
   }
 }

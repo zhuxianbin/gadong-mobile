@@ -22,7 +22,7 @@ const routes = Object.keys(pages).map((item: any) => {
     name: name.replace(/.index/g, ""),
   };
 });
-console.log(routes,pages,"routes",);
+console.log(routes, pages, "routes");
 export const router = createRouter({
   history: createWebHashHistory(),
   routes: unique([
@@ -50,11 +50,11 @@ const whiteList = ["/login", "/register"];
 
 router.beforeEach((to, from, next) => {
   const token = getToken();
-  if (!token) {
-    if (!whiteList.includes(to.path)) {
-      return next({ path: "/login" });
-    }
-  }
+  // if (!token) {
+  //   if (!whiteList.includes(to.path)) {
+  //     return next({ path: "/login" });
+  //   }
+  // }
 
   next();
 });
